@@ -1,0 +1,4 @@
+enum OpertionType{
+  NONE,
+
+}
