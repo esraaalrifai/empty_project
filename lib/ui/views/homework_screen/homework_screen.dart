@@ -34,6 +34,7 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
       child: Scaffold(
         backgroundColor: AppColors.backgroundColor,
         appBar: AppBar(
+          toolbarHeight: screenHieght(10),
           elevation: 0,
           backgroundColor: AppColors.mainWhiteColor,
           leading: CustomAppBar(
@@ -45,7 +46,7 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
             style: TextStyle(
               color: AppColors.mainBlueColor,
               fontWeight: FontWeight.bold,
-              fontSize: screenWidth(15),
+              fontSize: screenWidth(18),
             ),
           ),
           centerTitle: true,
@@ -74,9 +75,9 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
                   text: 'الصور/الفيديوهات المرفقة',
                 ),
                 //screenHieght(50).ph,
-                SizedBox(
-                  height: screenWidth(70),
-                ),
+                // SizedBox(
+                //   height: screenWidth(70),
+                // ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
@@ -96,7 +97,7 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
                     ),
                     Obx(
                       () => Container(
-                        height: screenHieght(6),
+                        height: screenHieght(6.6),
                         width: screenWidth(3.5),
                         decoration: BoxDecoration(
                             color: AppColors.mainWhiteColor,
@@ -144,15 +145,16 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
                     )
                   ],
                 ),
-                SizedBox(
-                  height: screenWidth(50),
-                ),
+                // SizedBox(
+                //   height: screenWidth(50),
+                // ),
                 // screenHieght(10).ph,
                 CustomText(text: "الصف"),
                 Form(
                   child: DropdownButtonFormField<String>(
                     value: _controller.selectedValue.value,
                     decoration: InputDecoration(
+                      contentPadding: EdgeInsets.all(screenWidth(30)),
                       filled: true,
                       fillColor: AppColors.mainWhiteColor,
                       hintText: 'اختر الصف',
@@ -165,7 +167,9 @@ class _HomeWorkScreeenState extends State<HomeWorkScreeen> {
                     },
                     items: [
                       DropdownMenuItem(
-                        child: Text('الصف الأول'),
+                        child: Text(
+                          'الصف الأول',
+                        ),
                         value: 'الصف الأول',
                       ),
                       DropdownMenuItem(

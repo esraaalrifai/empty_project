@@ -11,9 +11,9 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.symmetric(
-          vertical: screenHieght(90), horizontal: screenWidth(90)),
+          vertical: screenHieght(50), horizontal: screenWidth(50)),
       child: Container(
-        width: screenWidth(8),
+        width: screenWidth(10),
         height: screenHieght(30),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(7),

@@ -11,7 +11,7 @@ class CustomText extends StatelessWidget {
     return Text(
       text,
       textDirection: TextDirection.rtl,
-      style: TextStyle(fontSize: screenWidth(20)),
+      style: TextStyle(fontSize: screenWidth(25)),
     );
   }
 }

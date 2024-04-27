@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:darrebni/ui/shared/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:darrebni/ui/shared/colors.dart';
@@ -48,7 +49,7 @@ class CustumButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         backgroundColor: backgroundColor ?? AppColors.blacktextColor,
-        fixedSize: Size(size.height / 2.03, size.height / 11),
+        fixedSize: Size(screenWidth(1), screenWidth(7)),
         side: borderColor != null
             ? BorderSide(
                 width: 1.0,

@@ -71,8 +71,10 @@ class CustomForm extends StatelessWidget {
             color: hintcolor,
           ),
           border: OutlineInputBorder(
-            borderSide: BorderSide.none,
-          ),
+              borderRadius: BorderRadius.circular(screenWidth(40)),
+              borderSide: BorderSide(
+                color: AppColors.greytextColor,
+              )),
           focusedBorder: OutlineInputBorder(
             borderSide: BorderSide(color: AppColors.greytextColor),
           ),
