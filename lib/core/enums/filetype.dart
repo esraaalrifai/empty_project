@@ -1,4 +1,4 @@
-enum FileTypeEnum {
+enum FileType {
   CAMERA,
   GALLERY,
   FILE,
